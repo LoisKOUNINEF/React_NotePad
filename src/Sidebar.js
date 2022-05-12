@@ -1,3 +1,5 @@
+import ReactMarkdown from 'react-markdown';
+
 function Sidebar({notes, onAddNote, onDeleteNote, activeNote, setActiveNote}) {
 
   const sortedNotes = notes.sort((a, b) => b.lastModified - a.lastModified);
@@ -18,7 +20,7 @@ function Sidebar({notes, onAddNote, onDeleteNote, activeNote, setActiveNote}) {
             <strong>{note.title}</strong>
             <button onClick={() => onDeleteNote(note.id)}>Delete</button>
           </div>
-          <p>{note.body && note.body.substr(0, 15) + "..."}</p>
+          <ReactMarkdown>{note.body && note.body.substr(0, 100) + "..."}</ReactMarkdown>
           <small className="note-meta">
           Last modified{new Date(note.lastModified).toLocaleDateString("fr-FR", {
             hour: "2-digit",
