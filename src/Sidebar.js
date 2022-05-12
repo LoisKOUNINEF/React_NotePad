@@ -8,12 +8,17 @@ function Sidebar({notes, onAddNote}) {
       <div className="app-sidebar-notes">
       {notes.map((note) => (
         <div className="app-sidebar-note">
-          <div className="app-sidebar-note-title">
-            <strong>Title</strong>
+          <div className="sidebar-note-title">
+            <strong>{note.title}</strong>
             <button>Delete</button>
           </div>
-          <p>Preview</p>
-          <small className="note-meta">Last modified [date]</small>
+          <p>{note.body && note.body.substr(0, 15) + "..."}</p>
+          <small className="note-meta">
+          Last modified {new Date(note.lastModified).toLocaleDateString("fr-FR", {
+            hour: "2-digit",
+            minute: "2-digit",
+          })}
+          </small>
         </div>
         ))}
       </div>
