@@ -21,4 +21,4 @@ function Sidebar({notes, onAddNote}) {
     );
 }
 
-export default Sidebar
+export default Sidebar;
