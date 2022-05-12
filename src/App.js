@@ -8,6 +8,8 @@ function App() {
 
   const [notes, setNotes] = useState([]);
 
+  const [activeNote, setActiveNote] = useState(false);
+
   const onAddNote = () => {
     const newNote = {
       id: uuid(),
@@ -22,13 +24,25 @@ function App() {
     setNotes(notes.filter((note) => note.id !== idToDelete));
   };
 
+  const getActiveNote = () => {
+    return notes.find((note) => note.id === activeNote);
+  };
+
   return (
   <div className="App">
+
     <Sidebar
     notes={notes}
     onAddNote={onAddNote}
-    onDeleteNote={onDeleteNote} />
-    <Main />
+    onDeleteNote={onDeleteNote}
+    activeNote={activeNote}
+    setActiveNote={setActiveNote}
+    />
+
+    <Main
+    activeNote={getActiveNote()}
+    />
+
   </div>
   );
 }
