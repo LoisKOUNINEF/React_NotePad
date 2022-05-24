@@ -30,7 +30,7 @@ function Main({activeNote, onUpdateNote}) {
         />
       </div>
       <div className="app-main-note-preview">
-        <h1 className="preview-title">{activeNote.title}</h1>
+        <h3 className="preview-title">{activeNote.title}</h3>
         <ReactMarkdown className="markdown-preview">
           {activeNote.body}
         </ReactMarkdown>

@@ -13,7 +13,7 @@ body,
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 1rem;
   background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
 }
 
@@ -38,7 +38,7 @@ button:hover {
 /* SIDEBAR STYLES */
 
 .app-sidebar {
-  width: 30%;
+  width: 35%;
   height: 100vh;
   border-right: 1px solid #ddd;
 }
@@ -46,18 +46,18 @@ button:hover {
 .app-sidebar-header {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 1.5rem;
 }
-.app-sidebar-header h1 {
+.app-sidebar-header h3 {
   margin: 0;
 }
 
 .app-sidebar-notes {
-  height: calc(100vh - 78px);
+  height: calc(100vh - 5rem);
   overflow-y: scroll;
 }
 .app-sidebar-note {
-  padding: 25px;
+  padding: 1.5rem;
   cursor: pointer;
 }
 .sidebar-note-title {
@@ -68,7 +68,7 @@ button:hover {
   color: crimson;
 }
 .app-sidebar-note p {
-  margin: 10px 0;
+  margin: 0.8rem 0;
 }
 .app-sidebar-note small {
   display: block;
@@ -106,23 +106,23 @@ button:hover {
 
 /* Editing */
 .app-main-note-edit {
-  padding: 25px;
+  padding: 1.5rem;
 }
 
 .app-main-note-edit input,
 textarea {
   display: block;
   border: 1px solid #ddd;
-  margin-bottom: 20px;
+  margin-bottom: 1.3rem;
   width: 100%;
-  height: calc(50vh - 130px);
-  padding: 10px;
+  height: calc(50vh - 8rem);
+  padding: 0.8rem;
   resize: none;
   font-size: inherit;
   font-family: inherit;
 }
 .app-main-note-edit input {
-  height: 50px;
+  height: 2.5rem;
   font-size: 2rem;
 }
 
@@ -134,12 +134,12 @@ textarea {
 }
 
 .preview-title {
-  padding: 25px 25px 0 25px;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   margin: 0;
 }
 
 .markdown-preview {
-  padding: 0 25px 25px 25px;
+  padding: 0 1.5rem 1.5rem 1.5rem;
   font-size: 1rem;
   line-height: 2rem;
 }
