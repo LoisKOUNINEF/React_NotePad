@@ -5,6 +5,8 @@
 </div>
 </br></br>
 
+- [Deployed on GitHub pages](http://loiskouninef.github.io/React_NotePad)
+
 - [Based on tutorial by James Grimshaw](https://www.youtube.com/watch?v=ulOKYl5sHGk&t=1245s)
 
 # Getting Started with Create React App
