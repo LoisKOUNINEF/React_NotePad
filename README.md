@@ -7,6 +7,8 @@
 
 - [Deployed on GitHub pages](http://loiskouninef.github.io/React_NotePad)
 
+- Custom favicon.ico created with [Favicon](https://www.favicon.cc/).
+
 - [Based on tutorial by James Grimshaw](https://www.youtube.com/watch?v=ulOKYl5sHGk&t=1245s)
 
 # Getting Started with Create React App
